@@ -1,18 +1,6 @@
 /*
 This is empty on purpose! Your code to build the resume will go here.
  */
-
-//$("#main").append("William Johnson");
-
-var name = "William Johnson";
-var formattedName = HTMLheaderName.replace("%data%", name);
-
-var role = "Web Developer";
-var formattedRole = HTMLheaderRole.replace("%data%", role);
-
-$("#header").prepend(formattedRole);
-$("#header").prepend(formattedName);
-
 var bio = {
 	"name": "William Johnson",
 	"age": 49,
@@ -28,23 +16,6 @@ var bio = {
 	"biopic": "images/fry.jpg"
 };
 
-$("#main").append(bio.name);
-$("#main").append(bio.age);
-
-if(bio.skills.length > 0) {
-
-	$("#header").append(HTMLskillsStart);
-
-	var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
-	$("#skills").append(formattedSkill);
-	formattedSkill = HTMLskills.replace("%data%", bio.skills[1];
-	$("#skills").append(formattedSkill);
-	formattedSkill = HTMLskills.replace("%data%", bio.skills[2];
-	$("#skills").append(formattedSkill);
-	formattedSkill = HTMLskills.replace("%data%", bio.skills[3];
-	$("#skills").append(formattedSkill);
-}
-
 var work = {
 	"jobs": [{
 			"employer" = "AT&T",
@@ -58,6 +29,15 @@ var work = {
 			"dates" = "1993 - 2000"
 		}
 	]
+};
+
+var projects = {
+	"projects": [{
+		"title": "Portfolio",
+		"dates": "April 2017",
+		"description": "Portfolio - First Project for Front-End Web Developer",
+		
+	}]
 };
 
 var education = {
@@ -77,7 +57,34 @@ var education = {
 	],
 };
 
-var projects = {};
+//$("#main").append("William Johnson");
+
+var name = "William Johnson";
+var formattedName = HTMLheaderName.replace("%data%", name);
+
+var role = "Web Developer";
+var formattedRole = HTMLheaderRole.replace("%data%", role);
+
+$("#header").prepend(formattedRole);
+$("#header").prepend(formattedName);
+
+$("#main").append(bio.name);
+$("#main").append(bio.age);
+
+if(bio.skills.length > 0) {
+
+	$("#header").append(HTMLskillsStart);
+
+	var formattedSkill = HTMLskills.replace("%data%", bio.skills[0]);
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace("%data%", bio.skills[1];
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace("%data%", bio.skills[2];
+	$("#skills").append(formattedSkill);
+	formattedSkill = HTMLskills.replace("%data%", bio.skills[3];
+	$("#skills").append(formattedSkill);
+}
+
 
 $("#main").append(work["position"]);
 $("#main").append(education.name);
