@@ -1,13 +1,9 @@
-/*
-This is empty on purpose! Your code to build the resume will go here.
- */
- // header //
+// header //
 var bio = {
-	"name": "William Johnson",
-	"age": 49,
-	"role": "Web Developer",
+	"name": "William Johnson  ",
+	"role": "  Web Developer",
 	"contacts": {
-		"mobile": "555-555-5555",
+		"mobile": "314-737-2590",
 		"email": "wjohnson777@gmail.com",
 		"github": "wjohnson777",
 		"location": "Missouri"
@@ -24,13 +20,13 @@ var work = {
 			"title" = "Network Center Technician",
 			"location" = "St. Louis, Missouri",
 			"dates" = "May 2000 - Present",
+			"description" "<ul><li>Provision and diagnose trouble of ADSL and ATM circuits on AT&T's broadband network.</li><ul>"
 		}, {
 			"employer" = "Surface Systems Inc",
 			"title" = "Lead Systems Technician",
 			"location" = "St. Louis, Missouri",
 			"dates" = "1993 - 2000"
-		}
-	]
+		}]
 };
 
 // projects //
@@ -51,21 +47,19 @@ var education = {
 			"degree": "Associates",
 			"majors": "Electronics Engineering",
 			"dates": 1989,
-		}
-	],
-	"onlineCourses": [{
+		}],
+	'onlineCourses': [{
 			"title": "Front-End Web Developer NanoDegree",
 			"school": "Udacity",
 			"dates": 2016,
-		}
-	],
+		}],
 };
 
 // bio info //
 bio.display = function () {
 	'use strict'
-var formattedName = HTMLheaderName.replace("%data%", name);
-var formattedRole = HTMLheaderRole.replace("%data%", role);
+var formattedName = HTMLheaderName.replace("%data%", bio.name);
+var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
 var formattedBioPic = HTMLbioPic.replace("%data%", bio.biopic);
 var formattedMobile = HTMLmobile.replace("%data%", bio.contacts.mobile);
 var formattedEmail = HTMLemail.replace("%data%", bio.contacts.email);
@@ -91,7 +85,8 @@ $("#header").append(formattedWelcomeMessage);
 $("#header").append(HTMLskillsStart);
 
 // skills list //
-for (var skill=0;
+
+	for (var skill=0;
          skill < bio.skills.length;
         skill++) {
         var formattedSkills = HTMLskills.replace("%data%", bio.skills[skill]);
@@ -103,13 +98,15 @@ bio.display();
 
 // work experience //
 work.display = function() {
+	'use strict'
 	
-	for (var job = 0; job < work.jobs.length; job++) {
+	for (var job =0; 
+		 job < work.jobs.length; 
+		 job++) {
 		$("#workExperience").append(HTMLworkStart);
 		
-		var formattedEmployer = HTMLworkEmployer.replace("%data", work.jobs[job].employer);
-		
-		var formattedTitle = HTMLworkTitle.replace("%data", work.jobs[job].title);
+		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
+		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
 		
 		var formattedEmployerTitle = formattedEmployer + formattedTitle;
 		$(".work-entry:last").append(formattedEmployerTitle);
@@ -195,11 +192,6 @@ education.display();
 // Google Map //
 $("#mapDiv").append(googleMap);
 
-$(document).click(function(loc) {
-	var x = loc.pageX;
-	var y = loc.pageY;
-	
-	logClicks(x,y);
-	});
+
 }
 };
