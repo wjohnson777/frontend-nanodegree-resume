@@ -1,10 +1,9 @@
-
-
+/* Style Sheet */
 
 * {
-  padding: 0;
-  margin: 0;
-  font-family: 'Lemonada', sans-serif;
+	padding:0;
+	margin:0;
+	font-family: 'Lemonada', sans-serif;
 }
 
 .backToTop {
@@ -27,13 +26,13 @@
 	text-decoration:none;
 }
 
-.clear-fix {
-  overflow: auto;
+.clearfix {
+	overflow: auto;
 }
 
 .education-entry, .work-entry, .project-entry {
-  padding-left: 5%;
-  padding-right: 5%;
+	padding-left: 5%;
+	padding-right: 5%;
 }
 
 h1 {
@@ -50,122 +49,115 @@ h1 {
 }
 
 h2 {
-  font-weight: bold;
-  font-size: 24px;
-  color: #999999;
-  line-height: 29px;
-  padding: 10px;
-  font-family: 'Lemonada', sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	color: #999999;
+	line-height: 29px;
+	padding: 10px;
+	font-family: 'Lemonada', sans-serif;
 }
 
 h3 {
-  font-style: italic;
-  font-size: 20px;
-  color: #000000;
-  line-height: 22px;
+	font-style: italic;
+	font-size: 20px;
+	color: #000000;
+	line-height: 22px;
 }
 
 h4 {
-  font-weight: bold;
-  font-size: 14px;
-  color: #4a4a4a;
-  line-height: 17px;
+	font-weight: bold;
+	font-size: 14px;
+	color: #4a4a4a;
+	line-height: 17px;
 }
-
 
 h2, h3, h4, h5 {
-    padding:10px;
-    padding-left: 5%;
+	padding:10px;
+	padding-left: 5%;
     padding-right: 5%;
-
 }
 
-
 .date-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999999;
-  line-height: 16px;
+	font-style: italic;
+	font-size: 1.15em;
+	color: #999999;
+	line-height: 16px;
   /*float: left;*/
 }
 
 .location-text {
-  font-style: italic;
-  font-size: 14px;
-  color: #999999;
-  line-height: 16px;
-  float: right;
-
+	font-style: italic;
+	font-size: 14px;
+	color: #999999;
+	line-height: 16px;
+	float: right;
 }
 
 p {
-  font-size: 14px;
-  color: #333333;
-  line-height: 21px;
+	font-size: 14px;
+	color: #333333;
+	line-height: 21px;
 }
 
 a {
-  color: #1199c3;
-  text-decoration: none;
-  margin-top: 10px;
-  display: block;
+	color: #1199c3;
+	text-decoration: none;
+	margin-top: 10px;
+	display: block;
 }
 
 .welcome-message {
-  font-style: italic;
-  font-size: 18px;
-  color: #f3f3f3;
-  line-height: 28px;
+	font-style: italic;
+	font-size: 18px;
+	color: #f3f3f3;
+	line-height: 28px;
 }
 
-#skills-h3 {
-  color: #f5AE23;
-  display: none;
+#skillsH3 {
+	color: #f5AE23;
+	display: none;
 }
 
+.flexItem  {
+    list-style: square url("arrow.png");
+}
+	
 .orange {
-  background-color: #F5AE23;
+	background-color: #F5AE23;
 }
 
 .orange-text {
-  color: #F5AE23;
+	color: #F5AE23;
 }
 
 .white-text {
-  font-weight: bold;
-  color: #FFFFFF;
+	font-weight: bold;
+	color: #FFFFFF;
 }
 
 .gray {
-  background-color: aliceblue;
-  padding-bottom: 10px;
-  clear: both;
+	background-color: aliceblue;
+	padding-bottom: 10px;
+	clear: both;
 }
 
 .dark-gray {
-  background-color: darkblue;
+	background-color: darkblue;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: darkblue;
+	background-color: darkblue;
 }
 
 .flex-box {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 10px;
-  list-style-type: none;
-}
-
-.flex-column {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  padding: 10px;
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	padding: 10px;
+	list-style-type: none;
 }
 
 .center-content {
@@ -203,11 +195,11 @@ img {
 }
 
 span {
-  padding: 5px;
+	padding: 5px;
 }
 
-#lets-connect {
-  text-align: center;
+#letsConnect {
+	text-align: center;
 }
 
 #map {
@@ -225,32 +217,31 @@ span {
 }
 
 @media only screen and (max-width: 1024px) {
-  #lets-connect {
-    margin-top: 5%;
+	#lets-connect {
+		margin-top: 5%;
   }
 }
 
 @media only screen and (max-width:900px) {
-  .biopic {
-    width: 175px;
+	.biopic {
+		width: 175px;
   }
 }
 
 @media only screen and (max-width: 750px) {
-  #lets-connect {
-    margin-top: 10%;
+	#letsConnect {
+		margin-top: 10%;
   }
-  .biopic {
-    width: 150px;
+	.biopic {
+		width: 150px;
   }
-  .welcome-message {
-    display: none;
+	.welcome-message {
+		display: none;
   }
 }
 
 @media only screen and (min-width: 750px) {
-  #skills-h3,
-  .biopic {
-    display: block;
+	#skillsH3, .biopic {
+		display: block;
   }
 }
