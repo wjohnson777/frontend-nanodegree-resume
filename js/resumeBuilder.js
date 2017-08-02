@@ -26,6 +26,7 @@ var work = {
 			"title" = "Lead Systems Technician",
 			"location" = "St. Louis, Missouri",
 			"dates" = "1993 - 2000"
+			"description" = "<ul><li>Assembled and tested PC hardware, installed Windows NT server with SQL database, setup SQL code for automation of database communicaton with remote weather station locations.</li><ul>"
 		}]
 };
 
@@ -84,6 +85,7 @@ $("#header").append(formattedBioPic);
 $("#header").append(formattedWelcomeMessage);
 $("#header").append(HTMLskillsStart);
 
+
 // skills list //
 
 	for (var skill=0;
@@ -93,7 +95,6 @@ $("#header").append(HTMLskillsStart);
         $("#header").append(formattedSkills);
     }
 };
-
 bio.display();
 
 // work experience //
@@ -192,6 +193,24 @@ education.display();
 // Google Map //
 $("#mapDiv").append(googleMap);
 
+// Back to Top //
 
-}
-};
+$(document).ready(function() {
+
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 100) {
+            $('.backToTop').fadeIn();
+        } else {
+            $('.backToTop').fadeOut();
+        }
+    });
+
+    $('.backToTop').click(function() {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 800);
+        return false;
+    });
+
+});
