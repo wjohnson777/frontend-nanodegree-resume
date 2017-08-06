@@ -16,17 +16,17 @@ var bio = {
 // work experience //
 var work = {
 	"jobs": [{
-			"employer" = "AT&T",
-			"title" = "Network Center Technician",
-			"location" = "St. Louis, Missouri",
-			"dates" = "May 2000 - Present",
-			"description" "<ul><li>Provision and diagnose trouble of ADSL and ATM circuits on AT&T's broadband network.</li><ul>"
+			"employer": "AT&T",
+			"title": "Network Center Technician",
+			"location": "St. Louis, Missouri",
+			"dates": "May 2000 - Present",
+			"description": "<ul><li>Provision and diagnose trouble of ADSL and ATM circuits on AT&T's broadband network.</li><ul>"
 		}, {
-			"employer" = "Surface Systems Inc",
-			"title" = "Lead Systems Technician",
-			"location" = "St. Louis, Missouri",
-			"dates" = "1993 - 2000"
-			"description" = "<ul><li>Assembled and tested PC hardware, installed Windows NT server with SQL database, setup SQL code for automation of database communicaton with remote weather station locations.</li><ul>"
+			"employer": "Surface Systems Inc",
+			"title": "Lead Systems Technician",
+			"location": "St. Louis, Missouri",
+			"dates": "1993 - 2000",
+			"description": "<ul><li>Assembled and tested computer server hardware.</li><li>Installed Windows NT server with SQL database.</li><li>Setup SQL code for automation of database communicaton with remote weather station locations.</li><ul>"
 		}]
 };
 
@@ -36,15 +36,15 @@ var projects = {
 		"title": "Portfolio",
 		"dates": "April 2017",
 		"description": "Portfolio - First Project for Front-End Web Developer",
-		
+
 	}]
 };
 
 // education //
 var education = {
 	"schools": [{
-			"name": "Missouri Technical College";
-			"city": "Saint Louis, MO, US";
+			"name": "Missouri Technical College",
+			"city": "Saint Louis, MO, US",
 			"degree": "Associates",
 			"majors": "Electronics Engineering",
 			"dates": 1989,
@@ -80,7 +80,7 @@ $("#footerContacts").append(formattedMobile);
 $("#footerContacts").append(formattedEmail);
 $("#footerContacts").append(formattedGitHub);
 $("#footerContacts").append(formattedTwitter);
-$("#footerContacts").append(formattedBlog);    
+$("#footerContacts").append(formattedBlog);
 $("#header").append(formattedBioPic);
 $("#header").append(formattedWelcomeMessage);
 $("#header").append(HTMLskillsStart);
@@ -100,18 +100,18 @@ bio.display();
 // work experience //
 work.display = function() {
 	'use strict'
-	
-	for (var job =0; 
-		 job < work.jobs.length; 
+
+	for (var job =0;
+		 job < work.jobs.length;
 		 job++) {
 		$("#workExperience").append(HTMLworkStart);
-		
+
 		var formattedEmployer = HTMLworkEmployer.replace("%data%", work.jobs[job].employer);
 		var formattedTitle = HTMLworkTitle.replace("%data%", work.jobs[job].title);
-		
+
 		var formattedEmployerTitle = formattedEmployer + formattedTitle;
 		$(".work-entry:last").append(formattedEmployerTitle);
-		
+
 		var formattedDates = HTMLworkDates.replace("%data%", work.jobs[job].dates);
         $(".work-entry:last").append(formattedDates);
 
@@ -125,15 +125,15 @@ work.display();
 // projects //
 projects.display = function() {
     'use strict'
-     
-    for (var project=0; 
-         project < projects.projects.length; 
+
+    for (var project=0;
+         project < projects.projects.length;
          project++) {
         $("#projects").append(HTMLprojectStart);
-        
+
         var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[project].title);
         $(".project-entry:last").append(formattedTitle);
-        
+
         var formattedImages = HTMLprojectImage.replace("%data%", projects.projects[project].images);
         $(".project-entry:last").append(formattedImages);
 
@@ -151,15 +151,15 @@ projects.display();
 education.display = function() {
     'use strict'
 
-    for (var sch=0; 
-         sch < education.schools.length; 
+    for (var sch=0;
+         sch < education.schools.length;
          sch++) {
         $("#education").append(HTMLschoolStart);
 
         var formattedSchool = HTMLschoolName.replace("%data%", education.schools[sch].name);
         //formattedSchool = formattedSchool.replace("%logo%", education.schools[sch].logo);
         $(".education-entry:last").append(formattedSchool);
-        
+
         var formattedDates = HTMLschoolDates.replace("%data%", education.schools[sch].dates);
         $(".education-entry:last").append(formattedDates);
 
@@ -168,7 +168,7 @@ education.display = function() {
 
         var formattedMajors = HTMLschoolMajors.replace("%data%", education.schools[sch].majors);
         $(".education-entry:last").append(formattedMajors);
-        
+
         var formattedUrl = HTMLschoolUrl.replace("%data%", education.schools[sch].url);
         $(".education-entry:last").append(formattedUrl);
 
@@ -178,12 +178,12 @@ education.display = function() {
     $('#education').append(HTMLonlineClasses);
 
   education.onlineCourses.forEach(function(onlineCourse) {
-    $('#education').append(HTMLschoolStart);    
+    $('#education').append(HTMLschoolStart);
 
     var formattedTitle = HTMLonlineTitle.replace('%data%',onlineCourse.title);
     var formattedSchool = HTMLonlineSchool.replace('%data%',onlineCourse.school);
     var formattedDates = HTMLonlineDates.replace('%data%',onlineCourse.dates);
-    var formattedUrl = HTMLonlineURL.replace('%data%',onlineCourse.url);    
+    var formattedUrl = HTMLonlineURL.replace('%data%',onlineCourse.url);
     $('.education-entry:last').append(formattedTitle + formattedSchool + formattedDates + formattedUrl);
   });
 };
