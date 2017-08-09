@@ -6,7 +6,7 @@ var bio = {
 		"mobile": "314-737-2590",
 		"email": "wjohnson777@gmail.com",
 		"github": "wjohnson777",
-		"location": "Missouri"
+		"location": "Warrenton, Missouri"
 	},
 	"welcomeMessage": "Hello!",
 	"skills": ["HTML", "CSS", "JavaScript"],
@@ -35,7 +35,7 @@ var projects = {
 	"projects": [{
 		"title": "Portfolio",
 		"dates": "April 2017",
-		"description": "Portfolio - First Project for Front-End Web Developer",
+		"description": "Portfolio - First Project for Front-End Web Developer"
 
 	}]
 };
@@ -43,17 +43,27 @@ var projects = {
 // education //
 var education = {
 	"schools": [{
-			"name": "Missouri Technical College",
-			"city": "Saint Louis, MO, US",
-			"degree": "Associates",
-			"majors": "Electronics Engineering",
-			"dates": 1989,
-		}],
-	'onlineCourses': [{
-			"title": "Front-End Web Developer NanoDegree",
-			"school": "Udacity",
-			"dates": 2016,
-		}],
+		"name": "Udacity",
+		"location": "Online - CA, USA",
+		"degree": "Nanodegree",
+		"majors": "Front-End Web Developer",
+		"url": "https://www.udacity.com",
+		"dates": "2016 - current"
+	}, {	
+		"name": "Missouri Technical College",
+		"location": "Saint Louis, MO, US",
+		"degree": "Associates",
+		"majors": "Electronics Engineering",
+		"dates": "1989 - 1990",
+		"url": "website closed"
+	}],
+	"onlineCourses": [{
+	"title": "Nanodegree - Front-End Web Developer",
+	"description": "Front-End Web Developer",
+	"school": "Udacity",
+	"dates": "2016 - current",
+	"url": "https://www.udacity.com"
+	}],
 };
 
 // bio info //
