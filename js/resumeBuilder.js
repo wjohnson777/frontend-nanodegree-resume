@@ -20,7 +20,7 @@ var work = {
 			"title": "Network Center Technician",
 			"location": "St. Louis, Missouri",
 			"dates": "May 2000 - Present",
-			"description": "<ul><li>Provision and diagnose trouble of ADSL and ATM circuits on AT&T's broadband network.</li><ul>"
+			"description": "<ul><li>Maintenance and provisioning of ADSL and ATM circuits at AT&T's Broadband Network Operations Center.</li><li>Coordinate with and lead the activities of inside or outside on-site forces and works with other employees and/or customers in the maintenance and installation of new and existing services.</li><ul>"
 		}, {
 			"employer": "Surface Systems Inc",
 			"title": "Lead Systems Technician",
@@ -35,8 +35,8 @@ var projects = {
 	"projects": [{
 		"title": "Portfolio",
 		"dates": "April 2017",
-		"description": "Portfolio - First Project for Front-End Web Developer"
-
+		"description": "Udacity, Portfolio - Front-End Web Developer",
+		"images": ["images/portfolio.png"]
 	}]
 };
 
