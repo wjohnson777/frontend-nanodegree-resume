@@ -36,16 +36,16 @@
 }
 
 h1 {
-  	font-size: 40px;
-  	color: #f5a623;
-  	line-height: 48px;
-  	display: inline;
-  	font-family: 'Lemonada', sans-serif;
+		font-size: 40px;
+		color: #f5a623;
+		line-height: 48px;
+		display: inline;
+		font-family: 'Lemonada', sans-serif;
 }
 
 .employer, .projectName, .school {
-    font-size: 1.25em;
-    font-weight: bold;
+		font-size: 1.25em;
+		font-weight: bold;
 }
 
 h2 {
@@ -166,13 +166,13 @@ a {
 
 .center-content {
 		padding-top: 2.5%;
-    padding-left: 5%;
-    padding-right: 5%;
-    padding-bottom: 2.5%;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-bottom: 2.5%;
 }
 
 #topContacts {
-    list-style-type: none;
+		list-style-type: none;
 }
 
 img {
@@ -187,16 +187,16 @@ img {
 }
 
 #projects {
-    background-color: floralwhite;
+		background-color: floralwhite;
 }
 
 #online {
-    color: #262626;
-	padding-top: 3%;
+		color: #262626;
+		padding-top: 3%;
 }
 
 .warning {
-    color: lawngreen;
+		color: lawngreen;
 }
 
 span {
@@ -208,17 +208,17 @@ span {
 }
 
 #map {
-    display: block;
-    height: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 80%;
+		display: block;
+		height: 100%;
+		margin-left: 5%;
+		margin-right: 5%;
+		width: 80%;
 }
 
 #mapDiv {
-    height: 400px;
-    width: 100%;
-    padding-bottom: 5%;
+		height: 400px;
+		width: 100%;
+		padding-bottom: 5%;
 }
 
 @media only screen and (max-width: 1024px) {
